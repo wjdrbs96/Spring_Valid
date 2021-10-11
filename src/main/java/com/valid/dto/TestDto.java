@@ -2,8 +2,7 @@ package com.valid.dto;
 
 import lombok.Getter;
 
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.NotBlank;
 
 /**
  * created by Gyunny 2021/10/11
@@ -11,10 +10,7 @@ import javax.validation.constraints.NotNull;
 @Getter
 public class TestDto {
 
-    @NotNull
+    @NotBlank
     private String name;
-
-    @Email
-    private String email;
 
 }
